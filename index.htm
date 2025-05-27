@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="start-screen" class="start-screen">
+            <h1>Welcome to the Quiz!</h1>
+            <p>Test your knowledge with these 10 questions. Good luck!</p>
+            <button id="start-btn" class="btn">Start Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="quiz-screen hide">
+            <div class="quiz-header">
+                <div class="question-count">
+                    Question <span id="question-number">1</span>/<span id="total-questions">10</span>
+                </div>
+                <div class="timer">
+                    Time: <span id="time">60</span>s
+                </div>
+                <div class="score">
+                    Score: <span id="current-score">0</span>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2 id="question-text">Question text goes here</h2>
+                <div id="options-container" class="options-container">
+                    <!-- Options will be added here by JavaScript -->
+                </div>
+            </div>
+
+            <button id="next-btn" class="btn hide">Next Question</button>
+        </div>
+
+        <div id="result-screen" class="result-screen hide">
+            <h1>Quiz Completed!</h1>
+            <div class="result-details">
+                <p>Your final score is <span id="final-score">0</span>/<span id="max-score">10</span></p>
+                <p>You answered <span id="correct-answers">0</span> questions correctly</p>
+                <p>Time taken: <span id="time-taken">0</span> seconds</p>
+            </div>
+            <button id="restart-btn" class="btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
